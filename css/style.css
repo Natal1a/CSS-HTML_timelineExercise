@@ -1,14 +1,28 @@
 :root {
   --baseColorNo: 308;
+  --timeline: 0.15em;
 }
 
 body, html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 14px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+#experience {
+  width: 900px;
+
+}
+
+/*TIMELINE STYLES*/
 
 .timelineContainer {
   position: relative;
@@ -17,9 +31,15 @@ body, html {
 
 .timeline {
   width: 100%;
-  height: 2px;
+  height: var(--timeline);
   background-color: black;
   z-index: 4;
+}
+
+.point {
+  width: var(--timeline);
+  height: 0.7em;
+  background-color: black;
 }
 
 
@@ -51,7 +71,7 @@ body, html {
 
 #designer .resp {
   height: 40px;
-  background-color: hsla(var(--baseColorNo), 50%, 60%, 0.7);
+  background-color: hsla(var(--baseColorNo), 40%, 50%, 0.7);
   position: relative;
   top: 20px;
   width: 330%;
@@ -74,7 +94,7 @@ body, html {
   padding: 0;
   position: relative;
   top: 70px;
-  padding-left: 5px;
+  padding-left: 0.4em;
 }
 
 .list {
@@ -93,17 +113,49 @@ body, html {
   width: 100%;
 }
 
-.point {
-  width: 2px;
-  height: 10px;
-  background-color: black;
-}
-
 .year {
   display: flex;
   align-self: center;
 }
 
-.experience {
+.timelineContent {
   display: flex;
+}
+
+/*RESPONSIBILITIES DESCRIPTION STYLES*/
+
+.responsibilities{
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.responsibilities ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li{
+  padding: 5px;
+  border: 1px dashed grey;
+}
+
+.respHeader{
+    margin-top: 5em;
+    margin-bottom: 1em;
+
+}
+
+
+.juniorResp{
+  border-left: 7px solid hsla(var(--baseColorNo), 20%, 60%, 0.7);
+}
+
+.designerResp{
+  border-left: 7px solid hsla(var(--baseColorNo), 40%, 50%, 0.7);
+}
+
+.pmResp{
+  border-left: 7px solid hsla(var(--baseColorNo), 70%, 50%, 0.7);
 }
