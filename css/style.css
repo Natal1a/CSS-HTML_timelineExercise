@@ -17,7 +17,7 @@ main{
   justify-content: center;
 }
 
-#experience {
+.container {
   width: 900px;
 
 }
@@ -43,24 +43,24 @@ main{
 }
 
 
-#junior, #designer, #pm{
+.firstBox, .secondBox, .thirdBox{
   position: relative;
   left: 9%;
 }
 
-#junior {
+.firstBox {
   width: 11%;
 }
 
-#designer {
+.secondBox {
   width: 20%;
 }
 
-#pm {
+.thirdBox {
   width: 50%;
 }
 
-#junior .resp {
+.firstBox .resp {
   height: 20px;
   background-color: hsla(var(--baseColorNo), 20%, 60%, 0.7);
   position: relative;
@@ -69,7 +69,7 @@ main{
   z-index: 3;
 }
 
-#designer .resp {
+.secondBox .resp {
   height: 40px;
   background-color: hsla(var(--baseColorNo), 40%, 50%, 0.7);
   position: relative;
@@ -78,7 +78,7 @@ main{
   z-index: 2;
 }
 
-#pm .resp {
+.thirdBox .resp {
   height: 60px;
   background-color: hsla(var(--baseColorNo), 70%, 50%, 0.7);
   position: relative;
@@ -86,7 +86,7 @@ main{
   z-index: 1;
 }
 
-#junior .period, #designer .period, #pm .period {
+.firstBox .period, .secondBox .period, .thirdBox .period {
   width: 100%;
   border-left: 1px dashed black;
   height: 100px;
@@ -122,21 +122,21 @@ main{
   display: flex;
 }
 
-/*RESPONSIBILITIES DESCRIPTION STYLES*/
+/* DESCRIPTION STYLES*/
 
-.responsibilities{
+.container1{
   display: flex;
   align-items: flex-start;
 
 }
 
-.responsibilities ul{
+.container1 ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.responsibilities li{
+.container1 li{
   padding: 5px;
   border: 1px dashed grey;
 }
@@ -148,14 +148,14 @@ main{
 }
 
 
-.juniorResp{
+.firstBoxResp{
   border-left: 7px solid hsla(var(--baseColorNo), 20%, 60%, 0.7);
 }
 
-.designerResp{
+.secondBoxResp{
   border-left: 7px solid hsla(var(--baseColorNo), 40%, 50%, 0.7);
 }
 
-.pmResp{
+.thirdBoxResp{
   border-left: 7px solid hsla(var(--baseColorNo), 70%, 50%, 0.7);
 }
